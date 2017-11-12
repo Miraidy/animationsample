@@ -1,3 +1,8 @@
+body{
+	overflow:hidden; 
+	background-color: grey;
+}
+
 .movingObject{
 	position:	absolute;
 }
