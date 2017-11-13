@@ -3,6 +3,59 @@
 		<link rel="stylesheet" href="main.css"/>
 	</head>
 	<body>
+		<div class="formBox">	
+			<div style="white-space:nowrap" class="inputContainer">
+				<label for="svgName">object name:</label>
+				<select id="svgName">
+					<option value="star" selected>star</option>
+					<option value="gitHub">gitHub</option>
+					<option value="twitter">twitter</option>
+					<option value="house">house</option>
+				  </select>
+			</div>		
+			<div style="white-space:nowrap" class="inputContainer">
+				<label for="objectCount">object count:</label>
+				<input type="number" min="0" id="objectCount" value="50"/>
+			</div>
+			<div class="inputContainer">
+				<label for="increment">x edge speed:</label>
+				<input type="number" min="1" id="increment" value="8"/>
+			</div>
+			<div class="inputContainer">
+				<label for="interval">timer call(ms):</label>
+				<input type="number" min="0" id="interval"   value="40"/>
+			</div>
+			<div class="inputContainer">
+				<label for="xInitialPosition">x initial position:</label>
+				<input type="number" min="0" id="xInitialPosition"   value="0" disabled/>
+			</div>
+			<div class="inputContainer">
+				<label for="yInitialPosition">y initial position:</label>
+				<input type="text" min="0" id="yInitialPosition"  value="half window height" disabled/>
+			</div>
+			<div class="inputContainer">
+				<label for="xDeltaMax">x edge max random(px):</label>
+				<input type="number" min="0" id="xDeltaMax" value="800"/>
+			</div>
+			<div class="inputContainer">
+				<label for="yDeltaMax">y edge max random(px):</label>
+				<input type="number" min="0" id="yDeltaMax" value="100"/>
+			</div>
+			<div style="white-space:nowrap" class="inputContainer">
+				<label for="movementFunction">moving function:</label>
+				<select id="movementFunction">
+					<option value="movementFunction1" selected>100 sin (x / 200)</option>
+					<option value="movementFunction2">100 sin (x / 20)</option>
+					<option value="movementFunction3">400 sin (x / 200)</option>
+					<option value="movementFunction4">1/2 * x * sin(x/80)</option>
+					<option value="movementFunction5">x * x / 500</option>
+				  </select>
+			</div>
+			<hr/>
+			<div class="inputContainer">
+				<input type="button" id="default" value="default"/>
+			</div>
+		</div>
 		<div class="objectBox">
 		</div>
 		<div style="display:none">
